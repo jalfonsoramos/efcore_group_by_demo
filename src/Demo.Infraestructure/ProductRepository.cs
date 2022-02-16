@@ -12,7 +12,7 @@ public class ProductRepository : IProductRepository
         _context = context;
     }
 
-    public IEnumerable<ProductSites> GetProductSites(List<int> productIds)
+    public IEnumerable<ProductSites> GetSitesByProduct(List<int> productIds)
     {
         var query = from p in _context.Products
                     join ps in _context.ProductSites on p.Id equals ps.ProductId
@@ -24,7 +24,7 @@ public class ProductRepository : IProductRepository
 
         if (query.Any())
         {
-            return query.ToList().Select(x => new ProductSites { Product = x.ProductName, Sites = x.Sites });
+            return query.Select(x => new ProductSites { Product = x.ProductName, Sites = x.Sites });
         }
 
         return Enumerable.Empty<ProductSites>();

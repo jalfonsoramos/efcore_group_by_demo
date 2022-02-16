@@ -13,7 +13,7 @@ namespace Demo.DataTests;
 public class ProductServiceTests
 {
     [Fact]
-    public void When_get_products_with_related_sites()
+    public void Get_products_with_related_sites()
     {
         var connection = new SqliteConnection("DataSource=:memory:");
         connection.Open();
@@ -54,7 +54,7 @@ public class ProductServiceTests
             using (var context = new DemoContext(options))
             {
                 IProductRepository service = new ProductRepository(context);
-                IEnumerable<ProductSites> result = service.GetProductSites(new List<int> { 1, 2, 3 });
+                IEnumerable<ProductSites> result = service.GetSitesByProduct(new List<int> { 1, 2, 3 });
 
                 Assert.Equal(3, result.Count());
 
