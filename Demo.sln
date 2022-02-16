@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Data", "Demo.Data\Demo.Data.csproj", "{AB3947F3-2ED0-4C60-B7C0-544CA6E12451}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Infraestructure", "src\Demo.Infraestructure\Demo.Infraestructure.csproj", "{AB3947F3-2ED0-4C60-B7C0-544CA6E12451}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Domain", "Demo.Domain\Demo.Domain.csproj", "{A4D01679-0BE8-4635-9BBE-88E24A3728DE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Core", "src\Demo.Core\Demo.Core.csproj", "{A4D01679-0BE8-4635-9BBE-88E24A3728DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.DataTests", "Demo.DataTests\Demo.DataTests.csproj", "{40F224F1-EC27-4E3F-BB1F-AC6175856025}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.InfraestructureTests", "tests\Demo.InfraestructureTests\Demo.InfraestructureTests.csproj", "{40F224F1-EC27-4E3F-BB1F-AC6175856025}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
